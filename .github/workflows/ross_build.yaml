@@ -47,5 +47,5 @@ jobs:
           --build-arg FRAPPE_BRANCH=version-14 \
           --build-arg PYTHON_VERSION=3.10.5 \
           --build-arg NODE_VERSION=16.18.0 \
-          --build-arg APPS_JSON_BASE64=$APPS_JSON_BASE64 \
+          --build-arg APPS_JSON_BASE64=${{ env.APPS_JSON_BASE64 }} \
           --platform linux/amd64,linux/arm64 --tag rosschiubsol/custom-erpnext:14.latest --file ./images/custom/Containerfile --push .
