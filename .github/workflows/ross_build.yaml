@@ -19,6 +19,10 @@ jobs:
               "url": "https://github.com/frappe/erpnext",
               "branch": "version-14"
             },
+            {
+              "url": "https://github.com/frappe/hrms",
+              "branch": "version-14"
+            },
           ]'
       - run: export APPS_JSON_BASE64=$(echo ${APPS_JSON} | base64 -w 0)
 
