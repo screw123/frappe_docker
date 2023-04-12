@@ -1,31 +1,6 @@
 name: Stable build
 
 on:
-  pull_request:
-    branches:
-      - main
-    paths:
-      - images/production/**
-      - overrides/**
-      - tests/**
-      - compose.yaml
-      - docker-bake.hcl
-      - example.env
-      - .github/workflows/build_stable.yml
-
-  push:
-    branches:
-      - main
-    paths:
-      - images/production/**
-      - overrides/**
-      - tests/**
-      - compose.yaml
-      - docker-bake.hcl
-      - example.env
-
-  # Triggered from frappe/frappe and frappe/erpnext on releases
-  repository_dispatch:
 
   workflow_dispatch:
 

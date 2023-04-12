@@ -1,9 +1,6 @@
 name: Autoupdate pre-commit hooks
 
 on:
-  schedule:
-    # Every day at 7 am
-    - cron: 0 7 * * *
 
 jobs:
   pre-commit-autoupdate:
