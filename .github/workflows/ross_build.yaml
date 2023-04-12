@@ -25,7 +25,7 @@ jobs:
             }, \
           ]'
           export APPS_JSON_BASE64=$(echo ${APPS_JSON} | base64 -w 0)
-          echo "content=$APPS_JSON_BASE64" >> $GITHUB_ENV
+          echo "APPS_JSON_BASE64=$APPS_JSON_BASE64" >> $GITHUB_ENV
       - run: echo "${{ env.APPS_JSON_BASE64 }}"
 
       - name: Set up QEMU
